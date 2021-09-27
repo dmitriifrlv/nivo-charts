@@ -1,0 +1,35 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.App {
+  height: 100vh;
+  padding: 2rem;
+  background-color: #F6F7FB;
+  font-family: 'Lato', sans-serif;
+}
+
+.diagram{
+  height: 250px;
+  width: 450px;
+  border-radius: 12px;
+  background: #FFFFFF;
+  box-shadow: 
+  1px 2px 10px #D5D8E7,
+  4px 8px 16px #D5D8E7
+  ;
+  padding: 1.5rem;
+}
+
+.title {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.body{
+  /* border: 1px solid red; */
+  height: 100%;
+  width: 100%;
+}
