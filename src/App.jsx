@@ -1,8 +1,8 @@
-import { useState } from 'react';
-import logo from './logo.svg';
 import './App.css';
 import { ResponsivePie } from '@nivo/pie';
 import { data } from './data'
+import MoreVertIcon from '@mui/icons-material/MoreVert';
+
 
 const CenteredMetric = ({ dataWithArc, centerX, centerY }) => {
   let total = 237 + 123 + 151
@@ -23,6 +23,7 @@ const CenteredMetric = ({ dataWithArc, centerX, centerY }) => {
   )
 }
 
+
 const MyResponsivePie = ({ data }) => (
   <ResponsivePie
     data={data}
@@ -40,7 +41,6 @@ const MyResponsivePie = ({ data }) => (
     arcLinkLabelsThickness={2}
     arcLinkLabelsColor={{ from: 'color' }}
     enableArcLabels
-    // arcLabel={function (e) { return e.id + " (" + e.value + ")" }}
     arcLabel={function (e) { return e.value }}
     arcLabelsSkipAngle={7}
     arcLabelsTextColor={{ from: 'color', modifiers: [['darker', 120]] }}
@@ -121,6 +121,7 @@ function App() {
       <div className="diagram">
         <div className="title">
           Площадь изделий
+          <MoreVertIcon fontSize="small" sx={{ position: 'absolute', right: 0 }} />
         </div>
         <div className='body'>
           <MyResponsivePie data={data} />
